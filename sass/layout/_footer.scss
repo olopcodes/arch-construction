@@ -1,0 +1,153 @@
+.footer {
+  background-color: lighten($black, 1.5%);
+  padding: 4rem 0 2rem;
+  color: rgba($ghost-white, 0.5);
+
+  .container {
+    @include mq("tablet") {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+      grid-gap: 1.5rem;
+      align-items: flex-start;
+    }
+  }
+
+  &__logo__box {
+    // border: 1px solid white;
+  }
+
+  &__logo {
+    font-size: 2rem;
+    text-decoration: none;
+    color: $ghost-white;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  &__icon {
+    color: $cta;
+  }
+
+  &__logo__socials {
+    margin-top: 1rem;
+  }
+
+  &__logo__socials a {
+    display: inline-flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($white, 0.15);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    color: $black;
+    margin-right: 0.5rem;
+    transition: background-color 0.2s ease;
+    &:hover {
+      background-color: $cta;
+    }
+  }
+
+  &__links {
+    margin: 3rem 0;
+    @include mq("tablet") {
+      margin: 0;
+    }
+  }
+
+  &__links .heading__small {
+    font-size: 1.05rem;
+  }
+
+  &__list {
+  }
+
+  &__item {
+    text-transform: capitalize;
+  }
+
+  &__item a {
+    text-decoration: none;
+    color: rgba($ghost-white, 0.5);
+    transition: all 0.2s ease;
+    &:hover {
+      color: $cta;
+      text-decoration: underline;
+    }
+  }
+
+  &__form {
+    margin: 0.5rem 0 0.3rem;
+    @include mq("tablet") {
+      display: flex;
+    }
+  }
+
+  &__form input {
+    padding: 0.6rem;
+    display: inline-block;
+    border-radius: 3px;
+    border: none;
+    @include mq("tablet") {
+      margin-right: 0.3rem;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__form p {
+  }
+
+  &__links p a {
+    color: $cta;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__bottom {
+    padding-top: 2rem;
+    background-color: darken($black, 20%);
+    &,
+    a {
+      color: $white;
+    }
+  }
+
+  &__bottom .container {
+    @include mq("tablet") {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__bottom__list {
+    display: flex;
+    text-transform: capitalize;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    @include mq("tablet") {
+      margin: 0;
+      width: 15rem;
+      justify-content: space-between;
+    }
+  }
+
+  &__bottom__item a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__bottom__copy {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+}

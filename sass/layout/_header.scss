@@ -1,0 +1,54 @@
+.header {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 1rem 0;
+  // background-color: black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+  @include mq("tablet") {
+    padding: 1rem 0 0;
+  }
+
+  &.active {
+    background-color: $black;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-btn {
+    color: $ghost-white;
+    font-size: 1.6rem;
+    cursor: pointer;
+    @include mq("tablet") {
+      display: none;
+    }
+  }
+
+  .logo {
+    text-decoration: none;
+    color: $ghost-white;
+    font-size: 2rem;
+  }
+
+  .logo-sm {
+    @include mq("desktop") {
+      display: none;
+    }
+  }
+
+  .logo-lg {
+    display: none;
+
+    @include mq("desktop") {
+      display: block;
+    }
+  }
+}

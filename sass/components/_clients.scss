@@ -1,0 +1,186 @@
+.clients {
+  padding: 4rem 0;
+  padding-bottom: 0;
+  &__wrapper {
+    margin-bottom: 3rem;
+    @include mq("tablet") {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  }
+
+  &__people {
+    // border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mq("tablet") {
+      width: 15rem;
+      // border: 1px solid;
+    }
+  }
+
+  &__box {
+    margin-right: 1.5rem;
+    @include mq("tablet") {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__box.active img {
+    border: 2px solid $cta;
+    height: 5rem;
+    width: 5rem;
+    border-color: $cta;
+    @include mq("tablet") {
+      height: 7rem;
+      width: 7rem;
+    }
+  }
+
+  &__box.active .heading__small {
+    color: $black;
+    font-size: 1rem;
+  }
+
+  &__box img {
+    display: block;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 2px solid transparent;
+    @include mq("tablet") {
+      border: 3.5px solid transparent;
+    }
+  }
+
+  &__box .heading__small {
+    color: rgba($grey, 0.7);
+    font-size: 0.8rem;
+    margin-left: 1rem;
+  }
+
+  &__reviews {
+    margin-top: 2rem;
+    @include mq("tablet") {
+      margin-top: 0;
+      margin-left: 1.5rem;
+    }
+
+    @include mq("desktop") {
+      margin: 0;
+    }
+  }
+
+  &__reviews .heading__sub {
+    text-align: center;
+
+    @include mq("desktop") {
+      display: inline-block;
+      margin-left: 2.5rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 1px solid $cta;
+    }
+  }
+
+  &__reviews__wrapper {
+    position: relative;
+    height: 12rem;
+    overflow-x: hidden;
+    @include mq("desktop") {
+      width: 35rem;
+      height: 15rem;
+    }
+  }
+
+  &__review {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(120%);
+    opacity: 0;
+    z-index: 2;
+
+    @include mq("desktop") {
+      padding: 2.5rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  &__review.active {
+    opacity: 1;
+    transform: translate(0);
+  }
+
+  &__quote {
+    z-index: 1;
+    display: block;
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    color: rgba($cta, 0.3);
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include mq("desktop") {
+      top: 70%;
+    }
+  }
+
+  &__review--btns {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn {
+    width: 1.2rem;
+    cursor: pointer;
+    height: 2px;
+    background-color: $black;
+  }
+
+  &__review--btns .btn--left {
+    margin-right: 0.8rem;
+  }
+
+  &__review--btns .btn--left.active {
+    background-color: $cta;
+  }
+
+  &__review--btns .btn--right {
+  }
+
+  &__group {
+    border-top: 1.5px solid rgba($grey, 0.2);
+  }
+
+  &__group .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    grid-auto-rows: 11rem;
+  }
+
+  &__group__box {
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    color: $cta;
+    color: rgba($cta, 0.9);
+    // color: rgba($cta, 0.35);
+    font-size: 2.5rem;
+    display: inline-block;
+  }
+
+  &__group__box .heading__small {
+    color: $grey;
+    text-align: center;
+    // justify-self: center;
+  }
+}

@@ -1,0 +1,42 @@
+.nav-desktop {
+  display: none;
+  @include mq("tablet") {
+    display: block;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    cursor: pointer;
+    display: inline-block;
+    padding: 1.5rem 0.6rem;
+    border-bottom: 1.5px solid transparent;
+    transition: border-bottom 0.23s ease;
+    @include mq("desktop") {
+      padding: 1.5rem 1rem;
+    }
+  }
+
+  &__item.active,
+  &__item:hover {
+    border-bottom: 3px solid $cta;
+  }
+
+  &__item a,
+  &__item a:link,
+  &__item a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $ghost-white;
+    transition: color 0.23s ease;
+  }
+
+  &__item.active a,
+  &__item:hover a,
+  &__item:hover a:hover,
+  &__item:hover a:active {
+    color: $cta;
+  }
+}

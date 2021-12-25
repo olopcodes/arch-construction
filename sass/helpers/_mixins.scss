@@ -1,0 +1,18 @@
+// placeholder
+%box-shadow {
+  box-shadow: 3px 3px 8px rgba($black, 0.3);
+}
+
+@mixin mq($size) {
+  @if ($size == "tablet") {
+    @media screen and (min-width: 46em) {
+      @content;
+    }
+  }
+
+  @if ($size == "desktop") {
+    @media screen and (min-width: 67em) {
+      @content;
+    }
+  }
+}

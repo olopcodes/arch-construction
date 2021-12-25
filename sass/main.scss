@@ -1,0 +1,14 @@
+@import "./helpers/variables";
+@import "./helpers/mixins";
+@import "./helpers/base";
+@import "./helpers/variables";
+
+@import "./components/nav-mobile";
+@import "./components/nav-desktop";
+@import "./components/btn";
+@import "./components//clients";
+
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./pages/home.scss";

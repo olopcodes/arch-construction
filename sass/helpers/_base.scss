@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro&family=Pontano+Sans&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  // background-color: red;
+  font-size: 16px;
+  color: #333;
+  font-family: $font;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $font-heading;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}

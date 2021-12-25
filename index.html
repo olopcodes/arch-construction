@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./sass/main.css" />
+    <title>architstructors</title>
+  </head>
+  <body>
+    <div class="nav-mobile">
+      <div class="nav-mobile__wrapper">
+        <div class="menu-close"><p>X</p></div>
+        <nav class="nav-mobile__nav">
+          <ul class="nav-mobile__list">
+            <li class="nav-mobile__item"><a href="#">home</a></li>
+            <li class="nav-mobile__item"><a href="#">company</a></li>
+            <li class="nav-mobile__item"><a href="#">services</a></li>
+            <li class="nav-mobile__item"><a href="#">projects</a></li>
+            <li class="nav-mobile__item"><a href="#">news</a></li>
+            <li class="nav-mobile__item"><a href="#">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <div class="menu-btn"><i class="fas fa-bars"></i></div>
+        <a href="#" class="logo logo-sm">archit</a>
+        <a href="#" class="logo logo-lg">architstructors</a>
+
+        <nav class="nav-desktop">
+          <ul class="nav-desktop__list">
+            <li class="nav-desktop__item active"><a href="#">home</a></li>
+            <li class="nav-desktop__item"><a href="#">company</a></li>
+            <li class="nav-desktop__item"><a href="#">services</a></li>
+            <li class="nav-desktop__item"><a href="#">projects</a></li>
+            <li class="nav-desktop__item"><a href="#">news</a></li>
+            <li class="nav-desktop__item"><a href="#">contact</a></li>
+          </ul>
+        </nav>
+
+        <a href="#" class="btn btn--cta"
+          >get a quote <span><i class="fas fa-chevron-right"></i></span
+        ></a>
+      </div>
+    </header>
+    <main>
+      <section class="banner">
+        <div class="banner__slide active banner__slide--1">
+          <div class="banner__header">
+            <h1 class="heading__main">modern designs</h1>
+            <h4 class="heading__small">
+              contemporary architecture at modest prices
+            </h4>
+            <p>
+              Fine designs, fine management, better quality at quality prices.
+              See what people enjoy about working with us today.
+            </p>
+            <a href="#" class="btn btn--off"
+              >learn more <span><i class="fas fa-chevron-right"></i></span
+            ></a>
+          </div>
+        </div>
+        <div class="banner__slide banner__slide--2">
+          <div class="banner__header">
+            <h1 class="heading__main">world class management solutions</h1>
+            <h4 class="heading__small">need a hand finishing that project?</h4>
+            <p>
+              Our team will provide you will the direction you need to complete
+              your next project
+            </p>
+            <a href="#" class="btn btn--off"
+              >see how <span><i class="fas fa-chevron-right"></i></span
+            ></a>
+          </div>
+        </div>
+        <div class="banner__slide banner__slide--3">
+          <div class="banner__header">
+            <h1 class="heading__main">our consultants get the job done</h1>
+            <h4 class="heading__small">
+              never loose sight of the project ahead
+            </h4>
+            <p>
+              Top notch advisers at the ready to get, help, keep deadlines on
+              time.
+            </p>
+            <a href="#" class="btn btn--off"
+              >learn more <span><i class="fas fa-chevron-right"></i></span
+            ></a>
+          </div>
+        </div>
+        <div class="banner__btns">
+          <div id="banner-left" class="banner__btn banner__btn-left">&lt;</div>
+          <div id="banner-right" class="banner__btn banner__btn-right">
+            &gt;
+          </div>
+        </div>
+      </section>
+
+      <section class="leaders">
+        <div class="container">
+          <div class="leaders__left">
+            <div class="leaders__heading">
+              <h4 class="heading__small">
+                Leaders in innovative designs and construction
+              </h4>
+              <h2 class="heading__sub">
+                build better, futuristic, and environmental buildings
+                efficiently
+              </h2>
+            </div>
+
+            <div class="leaders__text">
+              <p>
+                We have years in the industry providing quality projects that
+                exceed expectations. Our works will allow you to meet government
+                standards and customer demands without sacrificing one for the
+                other. Find out more about our recent projects.
+              </p>
+
+              <a href="#" class="btn btn--cta--off"
+                >latest projects
+                <span> <i class="fas fa-chevron-right"></i> </span
+              ></a>
+            </div>
+          </div>
+
+          <div class="leaders__right">
+            <div class="leaders__award">
+              <h4 class="heading__small">
+                environmental design of the year <span>2019</span>,
+                <span>2020</span>
+              </h4>
+              <p class="leaders__award-icon"><i class="fas fa-award"></i></p>
+            </div>
+            <div class="leaders__img-box">
+              <img src="./images/building-1.jpg" alt="a condo" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="works">
+        <div class="container">
+          <div class="works__heading">
+            <h2 class="heading__sub">Notable Works</h2>
+            <ul class="works__list">
+              <li class="active"><a href="#">all</a></li>
+              <li><a href="#">architecture</a></li>
+              <li><a href="#">constructed</a></li>
+              <li><a href="#">consulted</a></li>
+            </ul>
+          </div>
+          <div class="works__container">
+            <div class="works__work active">
+              <div class="works__text">
+                <div class="works__work-heading">
+                  <h4 class="heading__small">futuristic designs</h4>
+                  <h3>The Amsterdam Way</h3>
+                </div>
+                <div class="works__description">
+                  <p>
+                    The owner had grand vision of what they wanted done with the
+                    place and how to go about it. We were able to recreate the
+                    vision in one our most awarded designs yet! The owner and
+                    the owners that bought up all the properties all agree.
+                  </p>
+                  <a href="#" class="works-btn">
+                    <i class="fas fa-angle-double-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="works__work">
+              <div class="works__text">
+                <div class="works__work-heading">
+                  <h4 class="heading__small">comfort, luxury, affordability</h4>
+                  <h3>Beacon Condos</h3>
+                </div>
+                <div class="works__description">
+                  <p>
+                    After some troubles rolling out the project, the developer
+                    reached out to us. We designed a comprehensive plan of
+                    action to move forward. After our involvement the work got
+                    done below budget and on time.
+                  </p>
+                  <a href="#" class="works-btn">
+                    <i class="fas fa-angle-double-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="works__work">
+              <div class="works__text">
+                <div class="works__work-heading">
+                  <h4 class="heading__small">environmental friendly spaces</h4>
+                  <h3>Solar Palace Plaza</h3>
+                </div>
+                <div class="works__description">
+                  <p>
+                    In accord with our mission and the governments green energy
+                    push, we created the most environmental friendly spaces in
+                    the city and will continue to help cities, states,
+                    countries, move forward in their environmental goal.
+                  </p>
+                  <a href="#" class="works-btn">
+                    <i class="fas fa-angle-double-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="works__slider-controls">
+            <div id="works__btn-1" class="works__slider-btn active"></div>
+            <div id="works__btn-2" class="works__slider-btn"></div>
+            <div id="works__btn-3" class="works__slider-btn"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="highlight">
+        <div class="container">
+          <div class="highlight__box highlight__box--1">
+            <div class="highlight__content">
+              <span class="highlight__icon">
+                <i class="far fa-building"></i>
+              </span>
+              <h4 class="heading__small">residential & commercial</h4>
+              <p>Seamless design process providing prompt deliverables.</p>
+              <ul class="highlight__list">
+                <li>
+                  <span><i class="far fa-check-circle"></i></span>adaptable
+                  designs
+                </li>
+                <li>
+                  <span><i class="far fa-check-circle"></i></span>updated design
+                  trends
+                </li>
+                <li>
+                  <span><i class="far fa-check-circle"></i></span>guaranteed
+                  government compliant designs
+                </li>
+              </ul>
+              <a href="#" class="btn btn--white">read more</a>
+            </div>
+          </div>
+
+          <div class="highlight__box highlight__box--1">
+            <div class="highlight__content">
+              <span class="highlight__icon">
+                <i class="fas fa-hard-hat"></i>
+              </span>
+              <h4 class="heading__small">detailed consultants</h4>
+              <p>
+                making sure your project gets done efficiently and right. No
+                compromising here.
+              </p>
+
+              <ul class="highlight__list">
+                <li>
+                  <span><i class="far fa-check-circle"></i></span>implementation
+                  of designs
+                </li>
+                <li>
+                  <span><i class="far fa-check-circle"></i></span>constant
+                  project reviews
+                </li>
+              </ul>
+              <a href="#" class="btn btn--white">read more</a>
+            </div>
+          </div>
+
+          <div class="highlight__box highlight__box--1">
+            <div class="highlight__content">
+              <span class="highlight__icon">
+                <i class="fas fa-tasks"></i>
+              </span>
+              <h4 class="heading__small">construction management</h4>
+              <p>complete range of construction activities managed by us.</p>
+              <ul class="highlight__list">
+                <li>
+                  <span><i class="far fa-check-circle"></i></span>single source
+                  accountability
+                </li>
+                <li>
+                  <span><i class="far fa-check-circle"></i></span>readable
+                  project reports
+                </li>
+
+                <li>
+                  <span><i class="far fa-check-circle"></i></span>
+                  estimating, planning, of construction activities
+                </li>
+              </ul>
+              <a href="#" class="btn btn--white">read more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="standard">
+        <!-- <div class="container"> -->
+        <div class="standard__content">
+          <div class="standard__text">
+            <div class="standard__heading">
+              <h4 class="heading__small">other's follow us</h4>
+              <h2 class="heading__sub">setting the industry standard</h2>
+            </div>
+            <div class="standard__description">
+              <p>
+                We are the standard in the field. Leading the way for design,
+                construction, innovations. While the other's follow, you will
+                stand out from the rest. Enjoy our services and meet your
+                construction needs.
+              </p>
+              <ul class="standard__list">
+                <li class="standard__item">
+                  <span class="standard__icon">
+                    <i class="fas fa-drafting-compass"></i>
+                  </span>
+                  <h4 class="heading__small">Always meet regulations</h4>
+                  <p>
+                    Our services are guaranteed to adhere to the guidelines
+                    because we strive to exceed them.
+                  </p>
+                </li>
+
+                <li class="standard__item">
+                  <span class="standard__icon">
+                    <i class="fas fa-tools"></i>
+                  </span>
+                  <h4 class="heading__small">renovations made simple</h4>
+                  <p>
+                    Quality tools, materials, and service make fixes better than
+                    before.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="standard__img">
+          <img src="./images/banner-2.jpg" alt="" />
+        </div>
+        <!-- </div> -->
+      </section>
+
+      <section class="clients">
+        <div class="container">
+          <div class="clients__wrapper">
+            <div class="clients__people">
+              <div class="clients__box active">
+                <img src="./images/man-2.jpg" alt="a client" />
+                <h4 class="heading__small">hector towers</h4>
+              </div>
+              <div class="clients__box">
+                <img src="./images/woman-2.jpg" alt="a client" />
+                <h4 class="heading__small">sherri flowers</h4>
+              </div>
+            </div>
+
+            <div class="clients__reviews">
+              <h2 class="heading__sub">what our clients say!</h2>
+              <div class="clients__reviews__wrapper">
+                <div class="clients__review active">
+                  <span class="clients__quote"
+                    ><i class="fas fa-quote-right"></i
+                  ></span>
+                  They are the best at what they do! They took a look at my
+                  overdue project, my goals, and wants and where able to create
+                  and build it out the way I wanted in a reasonable time. Highly
+                  recommend.
+                </div>
+
+                <div class="clients__review">
+                  <span class="clients__quote"
+                    ><i class="fas fa-quote-right"></i
+                  ></span>
+
+                  My close friend advised me to go with architstructors. I am so
+                  happy that I did. They are truly one of the best in the
+                  industry! They were able to manage our construction project
+                  and made sure we were on budget on time, and exceed
+                  expectations, without cutting corners! Amazing team!
+                </div>
+              </div>
+
+              <div class="clients__review--btns">
+                <div class="clients__btn btn--left active"></div>
+                <div class="clients__btn btn--right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="clients__group">
+          <div class="container">
+            <div class="clients__group__box">
+              <span class="clients__icon"
+                ><i class="fab fa-cuttlefish"></i
+              ></span>
+              <h4 class="heading__small">NYC contructors</h4>
+            </div>
+            <div class="clients__group__box">
+              <span class="clients__icon"
+                ><i class="fab fa-fonticons"></i
+              ></span>
+              <h4 class="heading__small">digitalFI</h4>
+            </div>
+            <div class="clients__group__box">
+              <span class="clients__icon"
+                ><i class="fab fa-autoprefixer"></i
+              ></span>
+              <h4 class="heading__small">archDaily</h4>
+            </div>
+            <div class="clients__group__box">
+              <span class="clients__icon"><i class="fab fa-ethereum"></i></span>
+              <h4 class="heading__small">mor-Diamonds</h4>
+            </div>
+            <div class="clients__group__box">
+              <span class="clients__icon"><i class="fab fa-usps"></i></span>
+              <h4 class="heading__small">USPS</h4>
+            </div>
+            <div class="clients__group__box">
+              <span class="clients__icon"><i class="fab fa-linux"></i></span>
+              <h4 class="heading__small">Pen Body Works</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__logo__box">
+          <a href="#" class="footer__logo">
+            <span class="footer__icon"><i class="fas fa-archway"></i></span>
+            architstructors
+          </a>
+          <p>
+            A leading designer of commercial and rental properties worldwide.
+            Detailed construction services to match. With over 15 years of
+            service
+          </p>
+          <div class="footer__logo__socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer__links">
+          <h5 class="heading__small">company</h5>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">about</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">the team</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">case studies</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">recent news</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">careers</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__links">
+          <h5 class="heading__small">services</h5>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">architecture residential</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">architecture commercial</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">construction consult</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">construction management</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">interior designs</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__links">
+          <h5 class="heading__small">newsletter</h5>
+          <p>
+            Sign up for our newsletter and receive constant updates on our
+            promotions and designs.
+          </p>
+          <form class="footer__form">
+            <input type="email" name="email" id="email" required />
+            <button class="btn btn--form">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+          <p>Have a question? <a href="#">click here</a></p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="container">
+          <ul class="footer__bottom__list">
+            <li class="footer__bottom__item"><a href="#">terms</a></li>
+            <li class="footer__bottom__item"><a href="#">privacy</a></li>
+            <li class="footer__bottom__item"><a href="#">FAQs</a></li>
+          </ul>
+          <p class="footer__bottom__copy">&copy; 2021 architstructors</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
